@@ -1,1 +1,1 @@
-Live Coding - React Lifecycle - Functional components
+Live Coding - the useContext() hook
