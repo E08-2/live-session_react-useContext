@@ -1,0 +1,25 @@
+body {
+    margin: 10px;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+button {
+    margin-bottom: 10px;
+}
+
+.note {
+    margin: 10px 0 20px 0;
+    padding: 10px;
+    border: 1px solid;
+    position: relative;
+}
+
+.delete {
+    position: absolute;
+    right: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
