@@ -45,10 +45,18 @@
 // ===================================
 
 
-// * So how do we actually USE useContext()
+// * So how do we actually USE useContext()?
 
 // In the above example, useContext() would work in the following way:
 
 // * 1. Create the "context" to pass the data in the PARENT component.
-// * 2. Make the PARENT component the PROVIDER of some data
+// * 2. Make the PARENT component the PROVIDER of some data via the context value
 // * 3. Let the GREAT-GRANDCHILD "consume" the data provided by App.js
+
+// Every time the context value changes (due to a state change)... 
+// ... the component consuming the context will re-render with the latest data.
+// This means we keep the link in our React app between the current state and what the user can see.
+// We also remove the need for prop-drilling.
+
+// Remember: try to only use useContext() where it is needed!
+// It is easier to stick with props to pass data down only one level, to a child component.
